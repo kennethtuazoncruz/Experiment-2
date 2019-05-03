@@ -1,0 +1,54 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    char sub;
+    int hours;
+    double A = 995;
+    double B = 1495;
+    double C = 1995;
+    double totalBillA, totalBillB;
+
+    cout << "Enter Package (A/B/C): ";
+    cin >> sub;
+    cout << "Enter Hours Accessed: ";
+    cin >> hours;
+    cout << "\r" << endl;
+
+    totalBillA = ((hours-10) *20) + A;
+    totalBillB = ((hours-20) *10) + B;
+
+    switch(sub)
+    {
+    case 'A':
+    case 'a':
+        if (hours >10)
+            cout << "Your Bill is " << totalBillA << " Pesos Only." << endl;
+        else
+            cout << "Your Bill is 995 Pesos Only." << endl;
+            break;
+
+    case 'B':
+    case 'b':
+        if (hours >20)
+            cout << "Your Bill is " << totalBillB << " Pesos Only." << endl;
+        else
+            cout << "Your Bill is 1495 Pesos Only." << endl;
+            break;
+
+    case 'C':
+    case 'c':
+            cout << "Your Bill is 1995 Pesos Only." << endl;
+            break;
+
+    default:
+            cout << "Error! Check Your Inputs!" << endl;
+    }
+
+    _getch();
+    return 0;
+}
