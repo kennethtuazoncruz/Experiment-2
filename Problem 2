@@ -1,0 +1,28 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    const double demand = 35;
+    const double use = 1.10;
+    const double late = 20;
+    double gallons, bal;
+
+    cout << "Enter Gallons of Water Consumed this Month: ";
+    cin >> gallons;
+    cout << "Enter Unpaid Balance last month in Pesos: ";
+    cin >> bal;
+    cout << "\r" << endl;
+
+    if (bal == 0)
+        cout << "Total Water Bill: " << (gallons*use)+demand << " Pesos" << endl;
+    else if (bal > 0)
+        cout << "Total Water Bill: " << (((gallons*use)+demand)+ late)+ bal << " Pesos" <<  endl;
+    else
+        cout << "Invalid Input! " << endl;
+
+    _getch();
+    return 0;
+}
