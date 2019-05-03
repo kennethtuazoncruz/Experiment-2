@@ -1,0 +1,48 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int index;
+    cout << "Counting... " << endl;
+    cout << "1";
+    for (index=2; index <=30; index++)
+    {
+        if (index == 11) {
+            continue;
+        }
+        else if (index == 13) {
+            continue;
+        }
+        else if (index == 15) {
+            continue;
+        }
+        else if (index == 17) {
+            continue;
+        }
+        else if (index == 19) {
+            continue;
+        }
+        else if (index == 21) {
+            continue;
+        }
+        else if (index == 23) {
+            continue;
+        }
+        else if (index == 25) {
+            continue;
+        }
+        else if (index == 27) {
+            continue;
+        }
+        else if (index == 29) {
+            continue;
+        }
+        cout << ", " << index;
+
+    }
+    _getch();
+    return 0;
+}
